@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>qif.channel &#8212; qif 1.2.1 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="qif.channel.compose" href="_autosummary/qif.channel.compose.html" />
+    <link rel="prev" title="qif" href="../index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-qif.channel">
+<span id="qif-channel"></span><h1>qif.channel<a class="headerlink" href="#module-qif.channel" title="Permalink to this headline">¶</a></h1>
+<p>Channels.</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/qif.channel.compose.html#module-qif.channel.compose" title="qif.channel.compose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compose</span></code></a></p></td>
+<td><p>Channel composition.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<dl class="py function">
+<dt id="qif.channel.assert_proper">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">assert_proper</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.assert_proper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>assert_proper(C: Mat&lt;double&gt;) -&gt; None</p></li>
+<li><p>assert_proper(C: Mat&lt;rat&gt;) -&gt; None</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.deterministic">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">deterministic</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.deterministic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>deterministic(map: Callable[[int], int], n_rows: int, n_cols: int, type: class[double] = 1) -&gt; Mat&lt;double&gt;</p></li>
+<li><p>deterministic(map: Callable[[int], int], n_rows: int, n_cols: int, type: class[fraction] = 1) -&gt; Mat&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.factorize">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">factorize</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.factorize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>factorize(A: Mat&lt;double&gt;, B: Mat&lt;double&gt;, col_stoch: bool = False) -&gt; Mat&lt;double&gt;</p></li>
+<li><p>factorize(A: Mat&lt;rat&gt;, B: Mat&lt;rat&gt;, col_stoch: bool = False) -&gt; Mat&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.hyper">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">hyper</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.hyper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>hyper(C: Mat&lt;double&gt;, pi: Row&lt;double&gt;) -&gt; Tuple[Row&lt;double&gt;, Mat&lt;double&gt;]</p></li>
+<li><p>hyper(C: Mat&lt;rat&gt;, pi: Row&lt;rat&gt;) -&gt; Tuple[Row&lt;rat&gt;, Mat&lt;rat&gt;]</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.identity">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">identity</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.identity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>identity(n_rows: int, type: class[double] = 1) -&gt; Mat&lt;double&gt;</p></li>
+<li><p>identity(n_rows: int, type: class[fraction] = 1) -&gt; Mat&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.is_proper">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">is_proper</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.is_proper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>is_proper(C: Mat&lt;double&gt;, mrd: float = 2.220446049250313e-14) -&gt; bool</p></li>
+<li><p>is_proper(C: Mat&lt;rat&gt;, mrd: mppp::rational&lt;1&gt; = Fraction(0, 1)) -&gt; bool</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.iterative_bayesian_update">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">iterative_bayesian_update</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.iterative_bayesian_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>iterative_bayesian_update(C: Mat&lt;double&gt;, out: Row&lt;double&gt;, start: Row&lt;double&gt; = array([], dtype=float64), max_diff: float = 1e-06, max_iter: int = 0) -&gt; Tuple[Row&lt;double&gt;, int]</p></li>
+<li><p>iterative_bayesian_update(C: Mat&lt;rat&gt;, out: Row&lt;rat&gt;, start: Row&lt;rat&gt;, max_diff: mppp::rational&lt;1&gt; = 1e-06, max_iter: int = 0) -&gt; Tuple[Row&lt;rat&gt;, int]</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.left_factorize">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">left_factorize</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.left_factorize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>left_factorize(A: Mat&lt;double&gt;, B: Mat&lt;double&gt;, col_stoch: bool = False) -&gt; Mat&lt;double&gt;</p></li>
+<li><p>left_factorize(A: Mat&lt;rat&gt;, B: Mat&lt;rat&gt;, col_stoch: bool = False) -&gt; Mat&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.no_interference">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">no_interference</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.no_interference" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>no_interference(n_rows: int, n_cols: int = 1, type: class[double] = 1) -&gt; Mat&lt;double&gt;</p></li>
+<li><p>no_interference(n_rows: int, n_cols: int = 1, type: class[fraction] = 1) -&gt; Mat&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.normalize">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">normalize</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>normalize(C: Mat&lt;double&gt;) -&gt; Mat&lt;double&gt;</p></li>
+<li><p>normalize(C: Mat&lt;rat&gt;) -&gt; Mat&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.posterior">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">posterior</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.posterior" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>posterior(C: Mat&lt;double&gt;, pi: Row&lt;double&gt;, col: int) -&gt; Row&lt;double&gt;</p></li>
+<li><p>posterior(C: Mat&lt;rat&gt;, pi: Row&lt;rat&gt;, col: int) -&gt; Row&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.posteriors">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">posteriors</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.posteriors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>posteriors(C: Mat&lt;double&gt;, pi: Row&lt;double&gt; = array([], dtype=float64)) -&gt; Mat&lt;double&gt;</p></li>
+<li><p>posteriors(C: Mat&lt;rat&gt;, pi: Row&lt;rat&gt;) -&gt; Mat&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.randu">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">randu</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.randu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>randu(n_rows: int, n_cols: int = 0, type: class[double] = 1) -&gt; Mat&lt;double&gt;</p></li>
+<li><p>randu(n_rows: int, n_cols: int = 0, type: class[fraction] = 1) -&gt; Mat&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.reduced">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">reduced</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.reduced" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>reduced(C: Mat&lt;double&gt;) -&gt; Mat&lt;double&gt;</p></li>
+<li><p>reduced(C: Mat&lt;rat&gt;) -&gt; Mat&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.sample">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">sample</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>sample(C: Mat&lt;double&gt;, pi: Row&lt;double&gt;) -&gt; Tuple[int, int]</p></li>
+<li><p>sample(C: Mat&lt;rat&gt;, pi: Row&lt;rat&gt;) -&gt; Tuple[int, int]</p></li>
+<li><p>sample(C: Mat&lt;double&gt;, pi: Row&lt;double&gt;, n_samples: int) -&gt; Mat&lt;uint&gt;</p></li>
+<li><p>sample(C: Mat&lt;rat&gt;, pi: Row&lt;rat&gt;, n_samples: int) -&gt; Mat&lt;uint&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.channel.sum_column_min">
+<code class="sig-prename descclassname">qif.channel.</code><code class="sig-name descname">sum_column_min</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.channel.sum_column_min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>sum_column_min(C: Mat&lt;double&gt;) -&gt; float</p></li>
+<li><p>sum_column_min(C: Mat&lt;rat&gt;) -&gt; mppp::rational&lt;1&gt;</p></li>
+</ol>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">qif</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">qif.channel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/qif.channel.compose.html">qif.channel.compose</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="qif.probab.html">qif.probab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qif.metric.html">qif.metric</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qif.measure.html">qif.measure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qif.mechanism.html">qif.mechanism</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qif.refinement.html">qif.refinement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qif.utility.html">qif.utility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qif.lp.html">qif.lp</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../index.html" title="previous chapter">qif</a></li>
+      <li>Next: <a href="_autosummary/qif.channel.compose.html" title="next chapter">qif.channel.compose</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/_autosummary/qif.channel.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

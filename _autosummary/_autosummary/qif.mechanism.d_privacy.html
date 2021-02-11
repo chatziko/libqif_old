@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>qif.mechanism.d_privacy &#8212; qif 1.2.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="qif.refinement" href="../qif.refinement.html" />
+    <link rel="prev" title="qif.mechanism.geo_ind" href="qif.mechanism.geo_ind.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-qif.mechanism.d_privacy">
+<span id="qif-mechanism-d-privacy"></span><h1>qif.mechanism.d_privacy<a class="headerlink" href="#module-qif.mechanism.d_privacy" title="Permalink to this headline">¶</a></h1>
+<p>Mechanism construction for <span class="math notranslate nohighlight">\(d\)</span>-privacy.</p>
+<dl class="py function">
+<dt id="qif.mechanism.d_privacy.distance_matrix">
+<code class="sig-prename descclassname">qif.mechanism.d_privacy.</code><code class="sig-name descname">distance_matrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_rows</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a></span></em>, <em class="sig-param"><span class="n">n_cols</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a></span></em>, <em class="sig-param"><span class="n">d</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a><span class="p">, </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a><span class="p">]</span><span class="p">, </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a><span class="p">]</span></span></em><span class="sig-paren">)</span> &#x2192; Mat&lt;double&gt;<a class="headerlink" href="#qif.mechanism.d_privacy.distance_matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="qif.mechanism.d_privacy.exact_distance">
+<code class="sig-prename descclassname">qif.mechanism.d_privacy.</code><code class="sig-name descname">exact_distance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_rows</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a></span></em>, <em class="sig-param"><span class="n">d</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a><span class="p">, </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a><span class="p">]</span><span class="p">, </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a><span class="p">]</span></span></em><span class="sig-paren">)</span> &#x2192; Mat&lt;double&gt;<a class="headerlink" href="#qif.mechanism.d_privacy.exact_distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="qif.mechanism.d_privacy.geometric">
+<code class="sig-prename descclassname">qif.mechanism.d_privacy.</code><code class="sig-name descname">geometric</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.mechanism.d_privacy.geometric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>geometric(n_rows: int, epsilon: float = 1, n_cols: int = 0, first_x: int = 0, first_y: int = 0) -&gt; Mat&lt;double&gt;</p></li>
+<li><p>geometric(n_rows: int, d: Callable[[int, int], float], n_cols: int = 0) -&gt; Mat&lt;double&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.mechanism.d_privacy.min_loss_given_d">
+<code class="sig-prename descclassname">qif.mechanism.d_privacy.</code><code class="sig-name descname">min_loss_given_d</code><span class="sig-paren">(</span><em class="sig-param">pi: Row&lt;double&gt;, n_cols: int, d_priv: Callable[[int, int], float], loss: Callable[[int, int], float], vars: str = 'all', d_priv_ch: Callable[[int, int], bool] = &lt;built-in method  of PyCapsule object at 0x7f41280ada20&gt;, inf: float = 460.51701859880916</em><span class="sig-paren">)</span> &#x2192; Mat&lt;double&gt;<a class="headerlink" href="#qif.mechanism.d_privacy.min_loss_given_d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="qif.mechanism.d_privacy.randomized_response">
+<code class="sig-prename descclassname">qif.mechanism.d_privacy.</code><code class="sig-name descname">randomized_response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_rows</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a></span></em>, <em class="sig-param"><span class="n">epsilon</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a></span> <span class="o">=</span> <span class="default_value">1</span></em>, <em class="sig-param"><span class="n">n_cols</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a></span> <span class="o">=</span> <span class="default_value">0</span></em><span class="sig-paren">)</span> &#x2192; Mat&lt;double&gt;<a class="headerlink" href="#qif.mechanism.d_privacy.randomized_response" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="qif.mechanism.d_privacy.tight_constraints">
+<code class="sig-prename descclassname">qif.mechanism.d_privacy.</code><code class="sig-name descname">tight_constraints</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_rows</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a></span></em>, <em class="sig-param"><span class="n">d</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a><span class="p">, </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a><span class="p">]</span><span class="p">, </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a><span class="p">]</span></span></em><span class="sig-paren">)</span> &#x2192; Mat&lt;double&gt;<a class="headerlink" href="#qif.mechanism.d_privacy.tight_constraints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">qif</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../qif.channel.html">qif.channel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.probab.html">qif.probab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.metric.html">qif.metric</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.measure.html">qif.measure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../qif.mechanism.html">qif.mechanism</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="qif.mechanism.bayes_vuln.html">qif.mechanism.bayes_vuln</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qif.mechanism.bayes_risk.html">qif.mechanism.bayes_risk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qif.mechanism.g_vuln.html">qif.mechanism.g_vuln</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qif.mechanism.l_risk.html">qif.mechanism.l_risk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qif.mechanism.shannon.html">qif.mechanism.shannon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qif.mechanism.geo_ind.html">qif.mechanism.geo_ind</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">qif.mechanism.d_privacy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.refinement.html">qif.refinement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.utility.html">qif.utility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.lp.html">qif.lp</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../qif.mechanism.html">qif.mechanism</a><ul>
+      <li>Previous: <a href="qif.mechanism.geo_ind.html" title="previous chapter">qif.mechanism.geo_ind</a></li>
+      <li>Next: <a href="../qif.refinement.html" title="next chapter">qif.refinement</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/_autosummary/_autosummary/qif.mechanism.d_privacy.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

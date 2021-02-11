@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>qif.mechanism.geo_ind &#8212; qif 1.2.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="qif.mechanism.d_privacy" href="qif.mechanism.d_privacy.html" />
+    <link rel="prev" title="qif.mechanism.shannon" href="qif.mechanism.shannon.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-qif.mechanism.geo_ind">
+<span id="qif-mechanism-geo-ind"></span><h1>qif.mechanism.geo_ind<a class="headerlink" href="#module-qif.mechanism.geo_ind" title="Permalink to this headline">¶</a></h1>
+<p>Mechanism construction for geo-indistinguishability.</p>
+<dl class="py function">
+<dt id="qif.mechanism.geo_ind.planar_geometric_grid">
+<code class="sig-prename descclassname">qif.mechanism.geo_ind.</code><code class="sig-name descname">planar_geometric_grid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">width</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a></span></em>, <em class="sig-param"><span class="n">height</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a></span></em>, <em class="sig-param"><span class="n">step</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a></span></em>, <em class="sig-param"><span class="n">epsilon</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a></span></em><span class="sig-paren">)</span> &#x2192; Mat&lt;double&gt;<a class="headerlink" href="#qif.mechanism.geo_ind.planar_geometric_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="qif.mechanism.geo_ind.planar_geometric_sample">
+<code class="sig-prename descclassname">qif.mechanism.geo_ind.</code><code class="sig-name descname">planar_geometric_sample</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.mechanism.geo_ind.planar_geometric_sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>planar_geometric_sample(cell_size: float, epsilon: float) -&gt; qif._qif.point</p></li>
+<li><p>planar_geometric_sample(cell_size: float, epsilon: float, n_samples: int) -&gt; std::vector&lt;qif::Point&lt;double&gt;, std::allocator&lt;qif::Point&lt;double&gt; &gt; &gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.mechanism.geo_ind.planar_laplace_grid">
+<code class="sig-prename descclassname">qif.mechanism.geo_ind.</code><code class="sig-name descname">planar_laplace_grid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">width</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a></span></em>, <em class="sig-param"><span class="n">height</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a></span></em>, <em class="sig-param"><span class="n">step</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a></span></em>, <em class="sig-param"><span class="n">epsilon</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a></span></em><span class="sig-paren">)</span> &#x2192; Mat&lt;double&gt;<a class="headerlink" href="#qif.mechanism.geo_ind.planar_laplace_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="qif.mechanism.geo_ind.planar_laplace_sample">
+<code class="sig-prename descclassname">qif.mechanism.geo_ind.</code><code class="sig-name descname">planar_laplace_sample</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">epsilon</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a></span></em><span class="sig-paren">)</span> &#x2192; qif._qif.point<a class="headerlink" href="#qif.mechanism.geo_ind.planar_laplace_sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">qif</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../qif.channel.html">qif.channel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.probab.html">qif.probab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.metric.html">qif.metric</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.measure.html">qif.measure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../qif.mechanism.html">qif.mechanism</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="qif.mechanism.bayes_vuln.html">qif.mechanism.bayes_vuln</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qif.mechanism.bayes_risk.html">qif.mechanism.bayes_risk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qif.mechanism.g_vuln.html">qif.mechanism.g_vuln</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qif.mechanism.l_risk.html">qif.mechanism.l_risk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qif.mechanism.shannon.html">qif.mechanism.shannon</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">qif.mechanism.geo_ind</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qif.mechanism.d_privacy.html">qif.mechanism.d_privacy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.refinement.html">qif.refinement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.utility.html">qif.utility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.lp.html">qif.lp</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../qif.mechanism.html">qif.mechanism</a><ul>
+      <li>Previous: <a href="qif.mechanism.shannon.html" title="previous chapter">qif.mechanism.shannon</a></li>
+      <li>Next: <a href="qif.mechanism.d_privacy.html" title="next chapter">qif.mechanism.d_privacy</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/_autosummary/_autosummary/qif.mechanism.geo_ind.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

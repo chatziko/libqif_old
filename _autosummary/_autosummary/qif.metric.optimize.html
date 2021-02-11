@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>qif.metric.optimize &#8212; qif 1.2.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="qif.measure" href="../qif.measure.html" />
+    <link rel="prev" title="qif.metric" href="../qif.metric.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-qif.metric.optimize">
+<span id="qif-metric-optimize"></span><h1>qif.metric.optimize<a class="headerlink" href="#module-qif.metric.optimize" title="Permalink to this headline">¶</a></h1>
+<p>Metric optimization problems.</p>
+<dl class="py function">
+<dt id="qif.metric.optimize.l1_diameter">
+<code class="sig-prename descclassname">qif.metric.optimize.</code><code class="sig-name descname">l1_diameter</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.metric.optimize.l1_diameter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>l1_diameter(C: Mat&lt;double&gt;, method: str = ‘direct’) -&gt; Tuple[float, int, int]</p></li>
+<li><p>l1_diameter(C: Mat&lt;rat&gt;, method: str = ‘direct’) -&gt; Tuple[mppp::rational&lt;1&gt;, int, int]</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.metric.optimize.l2_min_enclosing_ball">
+<code class="sig-prename descclassname">qif.metric.optimize.</code><code class="sig-name descname">l2_min_enclosing_ball</code><span class="sig-paren">(</span><em class="sig-param">C: Mat&lt;double&gt;</em><span class="sig-paren">)</span> &#x2192; Tuple[float, Row&lt;double&gt;]<a class="headerlink" href="#qif.metric.optimize.l2_min_enclosing_ball" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="qif.metric.optimize.simplex_l1_min_enclosing_ball">
+<code class="sig-prename descclassname">qif.metric.optimize.</code><code class="sig-name descname">simplex_l1_min_enclosing_ball</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.metric.optimize.simplex_l1_min_enclosing_ball" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>simplex_l1_min_enclosing_ball(C: Mat&lt;double&gt;, method: str = ‘lp’, in_conv_hull: bool = False) -&gt; Tuple[float, Row&lt;double&gt;]</p></li>
+<li><p>simplex_l1_min_enclosing_ball(C: Mat&lt;rat&gt;, method: str = ‘lp’, in_conv_hull: bool = False) -&gt; Tuple[mppp::rational&lt;1&gt;, Row&lt;rat&gt;]</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.metric.optimize.simplex_project">
+<code class="sig-prename descclassname">qif.metric.optimize.</code><code class="sig-name descname">simplex_project</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.metric.optimize.simplex_project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>simplex_project(pi: Row&lt;double&gt;) -&gt; Row&lt;double&gt;</p></li>
+<li><p>simplex_project(pi: Row&lt;rat&gt;) -&gt; Row&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">qif</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../qif.channel.html">qif.channel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.probab.html">qif.probab</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../qif.metric.html">qif.metric</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">qif.metric.optimize</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.measure.html">qif.measure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.mechanism.html">qif.mechanism</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.refinement.html">qif.refinement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.utility.html">qif.utility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qif.lp.html">qif.lp</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../qif.metric.html">qif.metric</a><ul>
+      <li>Previous: <a href="../qif.metric.html" title="previous chapter">qif.metric</a></li>
+      <li>Next: <a href="../qif.measure.html" title="next chapter">qif.measure</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/_autosummary/_autosummary/qif.metric.optimize.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

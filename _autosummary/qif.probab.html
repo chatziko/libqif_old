@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>qif.probab &#8212; qif 1.2.1 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="qif.metric" href="qif.metric.html" />
+    <link rel="prev" title="qif.channel.compose" href="_autosummary/qif.channel.compose.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-qif.probab">
+<span id="qif-probab"></span><h1>qif.probab<a class="headerlink" href="#module-qif.probab" title="Permalink to this headline">¶</a></h1>
+<p>Probability distributions.</p>
+<dl class="py function">
+<dt id="qif.probab.assert_proper">
+<code class="sig-prename descclassname">qif.probab.</code><code class="sig-name descname">assert_proper</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.probab.assert_proper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>assert_proper(pi: Row&lt;double&gt;) -&gt; None</p></li>
+<li><p>assert_proper(pi: Row&lt;rat&gt;) -&gt; None</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.probab.from_grid">
+<code class="sig-prename descclassname">qif.probab.</code><code class="sig-name descname">from_grid</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.probab.from_grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>from_grid(grid: Mat&lt;double&gt;) -&gt; Row&lt;double&gt;</p></li>
+<li><p>from_grid(grid: Mat&lt;rat&gt;) -&gt; Row&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.probab.is_proper">
+<code class="sig-prename descclassname">qif.probab.</code><code class="sig-name descname">is_proper</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.probab.is_proper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>is_proper(pi: Row&lt;double&gt;, mrd: float = 2.220446049250313e-14) -&gt; bool</p></li>
+<li><p>is_proper(pi: Row&lt;rat&gt;, mrd: mppp::rational&lt;1&gt; = Fraction(0, 1)) -&gt; bool</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.probab.is_uniform">
+<code class="sig-prename descclassname">qif.probab.</code><code class="sig-name descname">is_uniform</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.probab.is_uniform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>is_uniform(pi: Row&lt;double&gt;, mrd: float = 2.220446049250313e-14) -&gt; bool</p></li>
+<li><p>is_uniform(pi: Row&lt;rat&gt;, mrd: mppp::rational&lt;1&gt; = Fraction(0, 1)) -&gt; bool</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.probab.normalize">
+<code class="sig-prename descclassname">qif.probab.</code><code class="sig-name descname">normalize</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.probab.normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>normalize(pi: Row&lt;double&gt;) -&gt; Row&lt;double&gt;</p></li>
+<li><p>normalize(pi: Row&lt;rat&gt;) -&gt; Row&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.probab.point">
+<code class="sig-prename descclassname">qif.probab.</code><code class="sig-name descname">point</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.probab.point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>point(n_elem: int, x: int = 0, type: class[double] = 1) -&gt; Row&lt;double&gt;</p></li>
+<li><p>point(n_elem: int, x: int = 0, type: class[fraction] = 1) -&gt; Row&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.probab.randu">
+<code class="sig-prename descclassname">qif.probab.</code><code class="sig-name descname">randu</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.probab.randu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>randu(n_elem: int, type: class[double] = 1) -&gt; Row&lt;double&gt;</p></li>
+<li><p>randu(n_elem: int, type: class[fraction] = 1) -&gt; Row&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.probab.sample">
+<code class="sig-prename descclassname">qif.probab.</code><code class="sig-name descname">sample</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.probab.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>sample(pi: Row&lt;double&gt;) -&gt; int</p></li>
+<li><p>sample(pi: Row&lt;rat&gt;) -&gt; int</p></li>
+<li><p>sample(pi: Row&lt;double&gt;, n_samples: int) -&gt; Row&lt;uint&gt;</p></li>
+<li><p>sample(pi: Row&lt;rat&gt;, n_samples: int) -&gt; Row&lt;uint&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.probab.to_grid">
+<code class="sig-prename descclassname">qif.probab.</code><code class="sig-name descname">to_grid</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.probab.to_grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>to_grid(pi: Row&lt;double&gt;, width: int) -&gt; Mat&lt;double&gt;</p></li>
+<li><p>to_grid(pi: Row&lt;rat&gt;, width: int) -&gt; Mat&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt id="qif.probab.uniform">
+<code class="sig-prename descclassname">qif.probab.</code><code class="sig-name descname">uniform</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qif.probab.uniform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>uniform(n_elem: int, type: class[double] = 1) -&gt; Row&lt;double&gt;</p></li>
+<li><p>uniform(n_elem: int, type: class[fraction] = 1) -&gt; Row&lt;rat&gt;</p></li>
+</ol>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">qif</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="qif.channel.html">qif.channel</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">qif.probab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qif.metric.html">qif.metric</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qif.measure.html">qif.measure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qif.mechanism.html">qif.mechanism</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qif.refinement.html">qif.refinement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qif.utility.html">qif.utility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qif.lp.html">qif.lp</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="_autosummary/qif.channel.compose.html" title="previous chapter">qif.channel.compose</a></li>
+      <li>Next: <a href="qif.metric.html" title="next chapter">qif.metric</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/_autosummary/qif.probab.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
